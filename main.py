@@ -19,6 +19,7 @@ while inputq.lower() != "stop":
       print("Hi! I'm small-toolkit and I can do lots of things!\nWe can flip a coin (type \"coin\") or set a timer! (type \"timer 30\")")
     elif inputa[0] == "random":
       print(random.randint(int(inputa[1]),int(inputa[2])))
+  inputq = "controlstr"
   except:
     print("Are you sure you typed enough parameters? Restart the program to continue using it.")
       
