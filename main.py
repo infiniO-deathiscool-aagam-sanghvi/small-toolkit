@@ -1,3 +1,4 @@
+import os
 import random
 import time
 inputq = "start"
@@ -9,7 +10,7 @@ while inputq.lower() != "stop":
       inputb = int(inputa[1])
       while inputb != 0:
         time.sleep(1)
-        print("\033[H\033[J", end="")
+        os.system('clear')
         print(inputb)
         inputb -= 1
     elif inputa[0] == "coin":
